@@ -18,6 +18,10 @@ body{
     align-items: center;
     border-bottom: solid black 1px;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .nav__s1__title{
@@ -39,6 +43,7 @@ body{
     width: 100%;
     outline: none;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .nav__s3{
@@ -46,6 +51,27 @@ body{
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position: absolute;
+    padding: 20px;
+    border: 1px solid black;
+    width: 150px;
+    background-color: white;
+    top: 150%;
+    right: 0;
+    display: none;
+
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 
 /* categories section */
@@ -68,8 +94,20 @@ body{
 
 /* sale image section */
 
+.sale-image{
+    position: relative;
+}
 .sale-image img{
     width: 100%;
+}
+
+.sale__img__offer{
+    width: 30%;
+    padding: 20px;
+    border: 2px solid black;
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }
 
 /* recommended section */
